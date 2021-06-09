@@ -2043,3 +2043,66 @@ a {
 .anchor {
     padding-top: 2em;
 }
+
+.centered-div{
+    margin-left:auto;
+    margin-right:auto;
+
+    padding-bottom:2.25em;
+
+    display:block;
+    float:none;
+}
+
+.slot-div{
+    padding-left:1em;
+    padding-right:1em;
+    float:left;
+}
+
+/* from https://jsfiddle.net/wqD62/ */
+.contact-container{
+    display: -webkit-box;   
+	display: -moz-box; 
+	display: -ms-flexbox;  
+	display: -webkit-flex;
+	display: flex;  
+    
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+    -moz-align-items: center;
+	align-items: center;
+	-webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    flex-wrap: wrap;
+    background-color:white;
+    padding-bottom:10em;
+}
+
+.slot-divv{
+    
+    width: 25em;
+    height: 25em;
+    margin: 5em;
+    
+}
+
+.slot-divvv{
+    display:inline-block;
+    vertical-align: middle;
+    width: 15em;
+    height: 15em;
+    margin: 5em;
+    
+}
+
+.image-frame{
+    height: 20em;      /* equals max image height */
+    width: 20em;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding:13em;
+}

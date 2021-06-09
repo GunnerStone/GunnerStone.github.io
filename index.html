@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <header>
-    <title>Project Frontier</title>
+    <title>Gunner Stone</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="icon" href="favicon.ico?v=1" />
+    <link rel="icon" href="images/favicon.ico" />
         <!-- We need the following to use bootstrap. -->
         <link
         rel="stylesheet"
@@ -61,10 +61,10 @@
                 <div class="right hide-small">
                     
                     
-                    <a href="#about" class="bar-item button standard-font" style="text-decoration:none;">RESEARCH</a>
-                    <a href="#video" class="bar-item button standard-font" style="text-decoration:none;">DELIVERABLES</a>
-                    <a href="#team" class="bar-item button standard-font" style="text-decoration:none;"><i class="fa fa-user"></i> TEAM</a>
-                    <a href="#resources" class="bar-item button standard-font" style="text-decoration:none;"><i class="fa fa-book"></i> RESOURCES</a>
+                    <a href="#research" class="bar-item button standard-font" style="text-decoration:none;"><i class="fa fa-flask" aria-hidden="true"></i> RESEARCH</a>
+                    <a href="#otherProjects" class="bar-item button standard-font" style="text-decoration:none;"><i class="fa fa-code-fork" aria-hidden="true"></i> OTHER PROJECTS</a>
+                    <a href="#contact" class="bar-item button standard-font" style="text-decoration:none;"><i class="fa fa-envelope"></i> CONTACT</a>
+                    <a href="pdfs/CV-Gunner-6-8-2021.pdf" class="bar-item button standard-font" style="text-decoration:none;"><i class="fa fa-book"></i> CV</a>
                 </div>
                 <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -78,10 +78,10 @@
         <nav class="sidebar bar-block black card animate-left hide-medium hide-large" style="display:none" id="mySidebar">
             <a href="javascript:void(0)" onclick="bar_close()" class="bar-item button large padding-16">Close ×</a>
             
-            <a href="#about" onclick="bar_close()" class="bar-item button" style="text-decoration:none;">ABOUT</a>
-            <a href="#video" onclick="bar_close()" class="bar-item button" style="text-decoration:none;">DELIVERABLES</a>
-            <a href="#team" onclick="bar_close()" class="bar-item button" style="text-decoration:none;">TEAM</a>
-            <a href="#resources" onclick="bar_close()" class="bar-item button" style="text-decoration:none;">RESOURCES</a>
+            <a href="#research" onclick="bar_close()" class="bar-item button" style="text-decoration:none;">ABOUT</a>
+            <a href="#otherProjects" onclick="bar_close()" class="bar-item button" style="text-decoration:none;">OTHER PROJECTS</a>
+            <a href="#contact" onclick="bar_close()" class="bar-item button" style="text-decoration:none;">CONTACT</a>
+            <a href="pdfs/CV-Gunner-6-8-2021.pdf" onclick="bar_close()" class="bar-item button" style="text-decoration:none;">CV</a>
         </nav>
         <!-- Header with full-height image -->
         <header class="bgimg-1 display-container grayscale-min" id="home">
@@ -90,8 +90,8 @@
                     <span class="jumbo hide-small">Gunner Stone</span><br>
                     <span class="xxlarge hide-large hide-medium">Project Frontier</span><br>
                     <span class="large">Computer Science and Engineering</span></br>
-                    <span class="large">Bs. UNIVERSITY OF NEVADA, RENO (2016)  </span>
-                    <p><a href="#about" class="button white padding-large large margin-top opacity hover-opacity-off">Learn more</a></p>
+                    <span class="large">Bs. UNIVERSITY OF NEVADA, RENO (2020)  </span>
+                    <p><a href="#research" class="button white padding-large large margin-top opacity hover-opacity-off">Learn more</a></p>
                 </div>
             </div>
             <!-- <div class="display-bottomleft text-grey large" style="padding:24px 48px">
@@ -107,8 +107,8 @@
         
 
         <!-- About Section -->
-        <div class="graycontainer light-grey anchor" id="about">
-        <div class="container" style="padding:64px 16px" id="about">
+        <div class="graycontainer light-grey anchor" id="research">
+        <div class="container" style="padding:64px 16px" id="research">
             <h3 class="font-1 nevada-blue boldest"><b>RESEARCH</b></h3>
             <table class="table">
                 <tr>
@@ -125,259 +125,171 @@
                                     <p style="text-align:justify">
                                     My primary research interests are in Machine Learning and Artificial Intelligence with an emphasis on Computer Vision.
                                     The main applications for my research activities focus on making meaningful inferences from sparse latent representations and optimizing feature selectors for use in representative learning.
-                                    I am generally interested in investigating the applications of computer vision with expert systems to design complex tools for automation.  
+                                    I am interested in investigating the applications of computer vision with expert systems to design complex tools for automation.  
                                     </p>
                                 </span>
                             </div>
                         </td>
                 </tr>
-                
-                <tr>
-                    <td></td><td></td>
-                </tr>
             </table> 
+            <h3 class="font-1 nevada-blue boldest">RESEARCH PROJECTS</h3>
+            <hr/>
+            <div class="col l3 m6 margin-bottom">
+                <div class="card">
+                    <img src="images/voxel_tree_1_746x746.png" alt="Tree Species Classification with Remote Sensing" style="width:100%">
+                    <div class="container">
+                        <h3 class="center">Tree Species Classification with Remote Sensing</h3>
+                        <p><a class="button light-grey block" style="text-decoration:none;" href="https://www.gearslab.org/"><i class="fa fa-info-circle"></i> Details</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col l3 m6 margin-bottom">
+                <div class="card">
+                    <img src="images/BeFunky-collage.png" alt="Rigid/Non-Rigid Transformation Autoencoder Representations" style="width:100%">
+                    <div class="container">
+                        <h3 class="center">Transformation Classification</h3>
+                        <p><a class="button light-grey block" style="text-decoration:none;" href="https://github.com/Alexandara/Representation_Learning_Transformations"><i class="fa fa-info-circle"></i> Details</a></p>
+                    </div>
+                </div>
+            </div>
         </div>
         </div>
         <!-- End About Section -->
 
         <!-- Video Section -->
-        <div class="container anchor" id="video">
-            <div class="container anchor" style="padding:64px 16px" id="video">
-                <h3 class="font-1 nevada-blue boldest">PROJECTS</h3>
+        <div class="container anchor" id="otherProjects">
+            <div class="container anchor" style="padding:64px 16px" id="otherProjects">
+                <h3 class="font-1 nevada-blue boldest">OTHER PROJECTS</h3>
                 <hr/>
                 <div class="col l3 m6 margin-bottom">
                     <div class="card">
-                        <img src="images/voxel_tree_1_746x746.png" alt="Tree Species Classification with Remote Sensing" style="width:100%">
+                        <img src="images/eigenfaces_746x746.png" alt="PCA Eigen Faces for Facial Recognition" style="width:100%">
                         <div class="container">
-                            <h3 class="center">Tree Species Classification with Remote Sensing</h3>
-                            <p><a class="button light-grey block" style="text-decoration:none;" href="https://www.gearslab.org/"><i class="fa fa-info-circle"></i> Details</a></p>
+                            <h3 class="center">PCA Eigen Faces for Facial Recognition</h3>
+                            <p><a class="button light-grey block" style="text-decoration:none;" href="pdfs/CS_679_Proj_3_PCA.pdf"><i class="fa fa-info-circle"></i> Details</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="col l3 m6 margin-bottom">
                     <div class="card">
-                        <img src="images/BeFunky-collage.png" alt="Rigid/Non-Rigid Transformation Autoencoder Representations" style="width:100%">
+                        <img src="images/skin_detection_746x746.png" alt="Skin Classification using MLE and GDA" style="width:100%">
                         <div class="container">
-                            <h3 class="center">Transformation Autoencoder Classification</h3>
-                            <p><a class="button light-grey block" style="text-decoration:none;" href="https://github.com/Alexandara/Representation_Learning_Transformations"><i class="fa fa-info-circle"></i> Details</a></p>
+                            <h3 class="center">Skin Classification using MLE and GDA</h3>
+                            <p><a class="button light-grey block" style="text-decoration:none;" href="pdfs/CS_679_Proj_2_GDA.pdf"><i class="fa fa-info-circle"></i> Details</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="col l3 m6 margin-bottom">
                     <div class="card">
-                        <img src="images/pokeball_746x746.png" alt="Jacob Spreitzer" style="width:100%">
+                        <img src="images/frontierplus.png" alt="FrontierPlus Horse Health Monitoring" style="width:100%">
                         <div class="container">
-                            <h3 class="center">Expert Autonomous System for PokeMMO Computer Vision Bots</h3>
+                            <h3 class="center">FrontierPlus Horse Health Monitoring</h3>
+                            <p><a class="button light-grey block" style="text-decoration:none;" href="https://github.com/leecbryant/Frontier"><i class="fa fa-info-circle"></i> Details</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l3 m6 margin-bottom">
+                    <div class="card">
+                        <img src="images/pokeGAN_746x746.png" alt="GAN with pokemon sprites" style="width:100%">
+                        <div class="container">
+                            <h3 class="center">Generating Pokemon sprites with GAN</h3>
+                            <p><a class="button light-grey block" style="text-decoration:none;" href="https://github.com/GunnerStone/PokePreprocess"><i class="fa fa-info-circle"></i> Details</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l3 m6 margin-bottom">
+                    <div class="card">
+                        <img src="images/wiz101_746x746.jpg" alt="Wizard101 Computer-Vision Bots" style="width:100%">
+                        <div class="container">
+                            <h3 class="center">Wizard101 Computer-Vision Bots</h3>
+                            <p><a class="button light-grey block" style="text-decoration:none;" href="https://github.com/GunnerStone/wizAPI"><i class="fa fa-info-circle"></i> Details</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l3 m6 margin-bottom">
+                    <div class="card">
+                        <img src="images/pokeball_746x746.png" alt="PokeMMO Computer-Vision Bots" style="width:100%">
+                        <div class="container">
+                            <h3 class="center">PokeMMO Computer-Vision Bots</h3>
                             <p><a class="button light-grey block" style="text-decoration:none;" href="https://github.com/GunnerStone/pokeBot"><i class="fa fa-info-circle"></i> Details</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="col l3 m6 margin-bottom">
                     <div class="card">
-                        <img src="images/alexishorse.jpg" alt="Dan" style="width:100%">
+                        <img src="images/storm_wars_746x746.jpg" alt="Storm Wars Computer Vision Bots" style="width:100%">
                         <div class="container">
-                            <h3>Alexis Tudor</h3>
-                            <p><a class="button light-grey block" style="text-decoration:none;" href="mailto:atudor@nevada.unr.edu"><i class="fa fa-info-circle"></i> Details</a></p>
+                            <h3 class="center">StormWars Computer-Vision Bots</h3>
+                            <p><a class="button light-grey block" style="text-decoration:none;" href="https://github.com/GunnerStone/stormwars-python-bot"><i class="fa fa-info-circle"></i> Details</a></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-            <!-- <iframe width="640" height="360" class ="mobilevideo" src="https://www.youtube.com/embed/ltP_S3UQleA" frameborder="0" allowfullscreen></iframe>
-            </iframe>
-            <hr/>
-            <a href="PAs/poster.pdf"><image width="921.6" height="691.2" src="PAs/posterimg.png"></image></a>
-            <br/>
-            <br/>
-            <br/>
-            <div class="row-padding grayscale" style="margin-top:20px">
-                <div class="col l3 m6 margin-bottom">
-                    <div class="card">
-                        <a href="https://projectfrontier.dev/PAs/PA1.pdf" style="text-decoration:none;">
-                            <div class="boxy-parent mobilefriendly">
-                                <div class="boxy-child">
-                                    Project Frontier
-                                    <br/>Report 1
-                                </div>
-                            </div>
-                            </a>
-                    </div>
-                </div>
-                <div class="col l3 m6 margin-bottom">
-                    <div class="card">
-                        <a href="https://projectfrontier.dev/PAs/PA2.pdf" style="text-decoration:none;">
-                            <div class="boxy-parent mobilefriendly">
-                                <div class="boxy-child">
-                                    Project Frontier
-                                    <br/>Report 2
-                                </div>
-                            </div>
-                            </a>
-                    </div>
-                </div>
-                <div class="col l3 m6 margin-bottom">
-                    <div class="card">
-                        <a href="https://projectfrontier.dev/PAs/PA3.pdf" style="text-decoration:none;">
-                            <div class="boxy-parent mobilefriendly">
-                                <div class="boxy-child">
-                                    Project Frontier
-                                    <br/>Report 3
-                                </div>
-                            </div>
-                            </a>
-                    </div>
-                </div>
-                <div class="col l3 m6 margin-bottom">
-                    <div class="card">
-                        <a href="https://projectfrontier.dev/PAs/PA4.pdf" style="text-decoration:none;">
-                            <div class="boxy-parent mobilefriendly">
-                                <div class="boxy-child">
-                                    Project Frontier
-                                    <br/>Report 4
-                                </div>
-                            </div>
-                            </a>
-                    </div>
-                </div>
-            </div> -->
             
-        </div>
+            
 
-        </div>
-        <!-- End Video Section -->
+        <!-- Contact Section -->
+        <div class="graycontainer light-grey anchor" id="contact">
+            <div class="container light-grey anchor" style="padding:64px 16px" id="contact">
+                <!-- Begin Contact Section -->
+                <h3 class="font-1 nevada-blue boldest">GET IN CONTACT WITH ME</h3>
+                <hr/>
+                <div class="row-padding" style="margin-top:20px">
+                    <div class="contact-container">
+                            <div class="slot-divv">
+                                <img src="images/University Logo RGB_block_n_blue_746x746.png" alt="UNR LOGO" style="width:100%">
+                                <div class="container">
+                                    <h3>UNR Employee Email</h3>
+                                    <h4>gunnerstone@unr.edu</h4>
+                                    <p><a class="button light-grey block" style="text-decoration:none;" href="mailto:gunnerstone@unr.edu"><i class="fa fa-envelope"></i> Email</a></p>
+                                </div>
+                            </div>
+                        <div class="slot-divv">
+                            <img src="images/stack_overflow.png" alt="UNR LOGO" style="width:100%">
+                            <div class="container">
+                                <h3>Stack Overflow Profile</h3>
+                                <h4>gunner-stone</h4>
+                                <p><a class="button light-grey block" style="text-decoration:none;" href="https://stackoverflow.com/users/5274923/gunner-stone"><i class="fa fa-stack-overflow" aria-hidden="true"></i> Profile</a></p>
+                            </div>
+                        </div>
+                        <div class="slot-divv">
+                            <img src="images/GitHub-Mark.png" alt="UNR LOGO" style="width:100%">
+                            <div class="container">
+                                <h3>Github Profile</h3>
+                                <h4>Gunner Stone</h4>
+                                <p><a class="button light-grey block" style="text-decoration:none;" href="https://github.com/GunnerStone"><i class="fa fa-github" aria-hidden="true"></i> Profile</a></p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <!-- End Contact Section -->
+                <!-- Begin Frameworks Section -->
+                <h3 class="font-1 nevada-blue boldest" style="padding-top:2.5em;">MY DATA-SCIENCE TOOLS</h3>
+                <hr/>
+                <div class="row-padding" style="margin-top:2em">
+                    <div class="contact-container" style="padding-top:5em;">
+                        <div class="image-frame" style="background-image:url(images/python_icon.png)"></div>
+                        <div class="image-frame" style="background-image:url(images/numpy_icon.png)"></div>
+                        <div class="image-frame" style="background-image:url(images/scipy_icon.png)"></div>
+                        <div class="image-frame" style="background-image:url(images/jupyter_icon.png)"></div>
+                    </div> 
+                    <div class="contact-container">
+                        <div class="image-frame" style="background-image:url(images/pytorch_icon.png)"></div>
+                        <div class="image-frame" style="background-image:url(images/tensorflow_icon.png)"></div>
+                        <div class="image-frame" style="background-image:url(images/keras_icon.png)"></div>
+                        <div class="image-frame" style="background-image:url(images/opencv_icon.png)"></div>
+                    </div> 
+                </div>
+                <!-- End Frameworks Section -->
 
-        <!-- Team Section -->
-        <div class="graycontainer light-grey anchor" id="team">
-            <div class="container light-grey anchor" style="padding:64px 16px" id="team">
-                <h3 class="center">MEMBERS OF TEAM #02</h3>
-                <div class="row-padding grayscale" style="margin-top:20px">
-                    <!-- CS Students -->
-                    <div class="col l3 m6 margin-bottom">
-                        <div class="card">
-                            <img src="images/gunnerhorse.png" alt="Gunner Stone" style="width:100%">
-                            <div class="container">
-                                <h3>Gunner Stone</h3>
-                                <p><a class="button light-grey block" style="text-decoration:none;" href="mailto:gunnerinlv@gmail.com"><i class="fa fa-envelope"></i> Contact</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col l3 m6 margin-bottom">
-                        <div class="card">
-                            <img src="images/leehorse.jpg" alt="Lee Bryant" style="width:100%">
-                            <div class="container">
-                                <h3>Lee Bryant</h3>
-                                <p><a class="button light-grey block" style="text-decoration:none;" href="mailto:contact@leecbryant.com"><i class="fa fa-envelope"></i> Contact</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col l3 m6 margin-bottom">
-                        <div class="card">
-                            <img src="images/jacobhorse.jpg" alt="Jacob Spreitzer" style="width:100%">
-                            <div class="container">
-                                <h3>Jacob Spreitzer</h3>
-                                <p><a class="button light-grey block" style="text-decoration:none;" href="mailto:jacob.sprietzer@gmail.com"><i class="fa fa-envelope"></i> Contact</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col l3 m6 margin-bottom">
-                        <div class="card">
-                            <img src="images/alexishorse.jpg" alt="Dan" style="width:100%">
-                            <div class="container">
-                                <h3>Alexis Tudor</h3>
-                                <p><a class="button light-grey block" style="text-decoration:none;" href="mailto:atudor@nevada.unr.edu"><i class="fa fa-envelope"></i> Contact</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <h3 class="center">INTERNAL/EXTERNAL ADVISORS</h3>
-                <div class="row-padding grayscale" style="margin-top:20px" >
-                    <!-- CS Students -->
-                    <div class="col l3 m6 margin-bottom">
-                        <div class="card">
-                            <img src="images/dascaluhorse.png" alt="Gunner Stone" style="width:100%">
-                            <div class="container">
-                                <h3>Dr. Sergiu Dascalu</h3>
-                                <p class="opacity">
-                                    Professor
-                                </p>
-                                <p>
-                                    Department of Computer Science and Engineering
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col l3 m6 margin-bottom">
-                        <div class="card">
-                            <img src="images/devrinhorse.png" alt="Lee Bryant" style="width:100%">
-                            <div class="container">
-                                <h3>Devrin Lee</h3>
-                                <p class="opacity">
-                                    Professor
-                                </p>
-                                <p>
-                                    Department of Computer Science and Engineering
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col l3 m6 margin-bottom">
-                        <div class="card">
-                            <img src="images/sena.jpg" alt="Sena Loyd" style="width:100%">
-                            <div class="container">
-                                <h3>Sena Loyd</h3>
-                                <p class="opacity">
-                                    External Advisor
-                                </p>
-                                <p>
-                                    Blockchains LLC
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
-        <!-- RESOURCE Section -->
-        <div class="container" style="padding:64px 16px" id="resources">
-            <h3 class="center">PROJECT RELATED RESOURCES</h3>
-            <hr/>
-            <h4 class="center">DOMAIN RELATED RESOURCES</h4>
-            <p class="center"> 
-                <a style="text-decoration:none;" href="https://www.amazon.com/Horse-Markings-Coloration-F-DeMouthe-Smith/dp/0498017516">PROBLEM DOMAIN BOOK: Horse Markings and Coloration</a>
-            </p>
-            <p class="center"> 
-                <a  style="text-decoration:none;" href="http://d2w7gersd1ix5b.cloudfront.net/files.ashx?t=fg&rid=TheBigE&f=colorsandmarkings.pdf">COLORS AND MARKINGS GENERAL KNOWLEDGE STUDY GUIDE</a>
-            </p>
-            <p class="center"> 
-                <a style="text-decoration:none;"  href="https://www.nytimes.com/2018/11/01/technology/nevada-bitcoin-blockchain-society.html">NEW YORK TIMES ARTICLE ON OUR PURPOSE'S BACKGROUND</a>
-            </p>
-            <p class="center"> 
-                <a style="text-decoration:none;" href="https://apnews.com/16fbb45cb0034f0aa71293b15d0b9b9d">WHY HORSE BIRTH-CONTROL DARTERS ARE IMPORTANT</a>
-            </p>
-            <h4 class="center">TECHNICAL RELATED RESOURCES</h4>
-            <p class="center"> 
-                <a style="text-decoration:none;" href="https://developer.apple.com/swift/resources/">SWIFT/XCODE DOCUMENTATION</a>
-            </p>
-            <p class="center"> 
-                <a style="text-decoration:none;" href="https://www.w3schools.com/">W3CSCHOOLS</a>
-            </p>
-    </div>
 
         <!-- Footer -->
         <div class="graycontainer light-grey">
         <footer class="center padding-64">
-            <a style="text-decoration:none;" href="#home" class="button light-grey"><i class="fa fa-arrow-up margin-right"></i>To the top</a>
-            <!-- <div class="xlarge section">
-                <i class="fa fa-facebook-official hover-opacity"></i>
-                <i class="fa fa-instagram hover-opacity"></i>
-                <i class="fa fa-snapchat hover-opacity"></i>
-                <i class="fa fa-pinterest-p hover-opacity"></i>
-                <i class="fa fa-twitter hover-opacity"></i>
-                <i class="fa fa-linkedin hover-opacity"></i>
-            </div> -->
-            <p>
-                <!-- Team #02 -->
-            </p>
+            <a style="text-decoration:none;" href="#home" class="button light-grey standard-font"><i class="fa fa-arrow-up margin-right"></i>To the top</a>
         </footer>
         </div>
 </body>
