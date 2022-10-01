@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>Gunner Stone</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Gunner Stone's personal website" />
+    <meta property="og:image" content="/images/logo.png"/>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+        <!-- We need the following to use bootstrap. -->
+        <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      />
+  
+      <!-- Latest compiled and minified CSS -->
+      <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+      />
+  
+      <!-- jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+      <!-- Popper JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  
+      <!-- Latest compiled JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</header>
+<style>
+    body, h1, h2, h3, h4, h5, h6 {
+        font-family: "Raleway", sans-serif
+    }
+
+    body, html {
+        height: 100%;
+        line-height: 1.8;
+    }
+
+    /* Full height image header */
+    .bgimg-1 {
+        background-position: center;
+        background-size: cover;
+        background-image: url("images/heighmap_lidar_trees.jpg"),url("images/main_lowres.jpg");
+        min-height: 100%;
+    }
+
+    .bar .button {
+        padding: 16px;
+    }
+</style>
+
+<body>
+        <!-- Navbar (sit on top) -->
+        <div class="top">
+            <div class="bar white" id="myNavbar">
+                <a href="index.html" class="bar-item button wide standard-font" style="text-decoration:none;">HOME</a>
+                <!-- Right-sided navbar links -->
+                <div class="right hide-small">
+                    
+                    
+                    <a href="index.html" class="bar-item button standard-font" style="text-decoration:none;"><i class="fa fa-home" aria-hidden="true"></i> HOME </a>
+                    <a href="#home" class="bar-item button standard-font" style="text-decoration:none;"><i class="fa fa-flask" aria-hidden="true"></i> RESEARCH </a>
+                    <a href="publications.html" class="bar-item button standard-font" style="text-decoration:none;"><i class="fa fa-university" aria-hidden="true"></i> PUBLICATIONS </a>
+                    <a href="other_projects.html" class="bar-item button standard-font" style="text-decoration:none;"><i class="fa fa-code-fork" aria-hidden="true"></i> OTHER PROJECTS</a>
+                    <a href="#contact" class="bar-item button standard-font" style="text-decoration:none;"><i class="fa fa-envelope"></i> CONTACT</a>
+                    <a href="https://docs.google.com/document/d/1r8uShI7XSsBZ9eo1VyVYo882X1-NHVa718Xs2tQTYfo/edit" class="bar-item button standard-font" style="text-decoration:none;"><i class="fa fa-book"></i> CV</a>
+                </div>
+                <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+                <a href="javascript:void(0)" class="bar-item button right hide-large hide-medium standard-font" onclick="bar_open()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Sidebar on small screens when clicking the menu icon -->
+        <nav class="sidebar bar-block black card animate-left hide-medium hide-large" style="display:none" id="mySidebar">
+            <a href="javascript:void(0)" onclick="bar_close()" class="bar-item button large padding-16 standard-font"><i class="fa fa-times" aria-hidden="true"></i> CLOSE</a>
+            <a href="index.html" onclick="bar_close()" class="bar-item button standard-font" style="text-decoration:none;"><i class="fa fa-home" aria-hidden="true"></i> HOME </a>
+            <a href="#home" onclick="bar_close()" class="bar-item button standard-font" style="text-decoration:none;"><i class="fa fa-flask" aria-hidden="true"></i> RESEARCH </a>
+            <a href="publications.html" onclick="bar_close()" class="bar-item button standard-font" style="text-decoration:none;"><i class="fa fa-university" aria-hidden="true"></i> PUBLICATIONS </a>
+            <a href="other_projects.html" onclick="bar_close()" class="bar-item button standard-font" style="text-decoration:none;"><i class="fa fa-code-fork" aria-hidden="true"></i> OTHER PROJECTS</a>
+            <a href="#contact" onclick="bar_close()" class="bar-item button standard-font" style="text-decoration:none;"><i class="fa fa-envelope"></i> CONTACT</a>
+            <a href="https://docs.google.com/document/d/1r8uShI7XSsBZ9eo1VyVYo882X1-NHVa718Xs2tQTYfo/edit" onclick="bar_close()" class="bar-item button standard-font" style="text-decoration:none;"><i class="fa fa-book"></i> CV</a>
+        </nav>
+        <!-- Header with full-height image -->
+        <header class="bgimg-1 display-container" id="home">
+            <div class="img-text">
+                <div class="display-left text-white bg-black" style="padding:3em">
+                    <span class="jumbo hide-small">Gunner Stone</span><br>
+                    <span class="xxlarge hide-large hide-medium">Gunner Stone</span><br>
+                    <span class="large">Computer Science and Engineering</span></br>
+                    <span class="large">BS. UNIVERSITY OF NEVADA, RENO (2020)  </span>
+                    <p><a href="#topbox" class="button white padding-large large margin-top opacity hover-opacity-off">Learn more</a></p>
+                </div>
+            </div>
+            <!-- <div class="display-bottomleft text-grey large" style="padding:24px 48px">
+                <i class="fa fa-facebook-official hover-opacity"></i>
+                <i class="fa fa-instagram hover-opacity"></i>
+                <i class="fa fa-snapchat hover-opacity"></i>
+                <i class="fa fa-pinterest-p hover-opacity"></i>
+                <i class="fa fa-twitter hover-opacity"></i>
+                <i class="fa fa-linkedin hover-opacity"></i>
+            </div> -->
+        </header>
+
+        
+
+        <!-- About Section -->
+        <div class="graycontainer light-grey anchor" id="topbox">
+        <div class="container" style="padding:2em 2em">
+            <h3 class="font-1 nevada-blue boldest"><b>RESEARCH INTERESTS</b></h3>
+            <hr/>
+            <div class="row-padding" style="margin-top:2em;padding-bottom:2em">
+                <div class="contact-container" style="padding-bottom:5em">
+                            <div class="container" style="padding-bottom:0em">
+                                <h3 class="center vcenter nevada-blue" style="font-size:2em"><b>Overview</b></h3>
+
+                                <p style="text-align:justify;font-size:1.5em">
+                                    My primary research interests are in LiDAR pointcloud classification and part segmentation using Deep Learning.  
+                                    <br>
+                                    My focal area is in the field of forest ecology, where I am interested in the use of LiDAR pointclouds to map forest biomass, carbon stocks, and biodiversity to help model and predict the effects of wildfires and climate change on forest ecosystems.
+                                    <br>
+                                    <br>
+                                    Currently, I am working on my Masters Thesis at the University of Nevada, Reno, where I am analyzing methods for LiDAR pointcloud part-segmentation on trees using a combination of Deep Learning and traditional Machine Learning techniques.
+                                    <br>
+                                    <br>
+                                    To help with this research, I am developing open-source tools to help with the processing and analysis of synthetic LiDAR pointclouds and their corresponding ground-truth labels produced by the SpeedTree modeling software.
+                                    <br>
+                                    The goal of this research is to help improve the accuracy, efficiency, and scalability of LiDAR pointcloud estimates for topological, geometrical and volumetric details of the woody structure of the tree. 
+                                </p>
+                            </div>
+                        
+                </div> 
+            </div>
+        </div>
+        
+        <!-- Pointcloud Tree-Part Segmentation Model Implementations (PyTorch)-->
+        <div class="container anchor">
+            <h3 class="font-1 nevada-blue boldest" style="padding-top:1em">Pointcloud Tree-Part Segmentation Model Implementations (PyTorch)</h3>
+            <hr/>
+            <div class="col l3 m6 margin-bottom">
+                <div class="card">
+                    <img src="images/tree_pointcloud_part_segmentation.png" alt="PointNet" style="width:100%">
+                    <div class="container">
+                        <h3 class="center" style="padding:4pt 0pt 4pt 0pt">PointNet</h3>
+                        <p><a class="button light-grey block" style="text-decoration:none;" href="https://github.com/GunnerStone"><i class="fa fa-github"></i> GitHub Code </a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col l3 m6 margin-bottom">
+                <div class="card">
+                    <img src="images/tree_pointcloud_part_segmentation.png" alt="PointNet++" style="width:100%">
+                    <div class="container">
+                        <h3 class="center" style="padding:4pt 0pt 4pt 0pt">PointNet++</h3>
+                        <p><a class="button light-grey block" style="text-decoration:none;" href="https://github.com/GunnerStone"><i class="fa fa-github"></i> GitHub Code </a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col l3 m6 margin-bottom">
+                <div class="card">
+                    <img src="images/tree_pointcloud_part_segmentation.png" alt="DGCNN" style="width:100%">
+                    <div class="container">
+                        <h3 class="center" style="padding:4pt 0pt 4pt 0pt">DGCNN++</h3>
+                        <p><a class="button light-grey block" style="text-decoration:none;" href="https://github.com/GunnerStone"><i class="fa fa-github"></i> GitHub Code </a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col l3 m6 margin-bottom">
+                <div class="card">
+                    <img src="images/tree_pointcloud_part_segmentation.png" alt="ShellNet" style="width:100%">
+                    <div class="container">
+                        <h3 class="center" style="padding:4pt 0pt 4pt 0pt">ShellNet</h3>
+                        <p><a class="button light-grey block" style="text-decoration:none;" href="https://github.com/GunnerStone"><i class="fa fa-github"></i> GitHub Code </a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col l3 m6 margin-bottom">
+                <div class="card">
+                    <img src="images/tree_pointcloud_part_segmentation.png" alt="Point-Voxel Transformer" style="width:100%">
+                    <div class="container">
+                        <h3 class="center" style="padding:4pt 0pt 4pt 0pt">Point-Voxel Transformer</h3>
+                        <p><a class="button light-grey block" style="text-decoration:none;" href="https://github.com/GunnerStone"><i class="fa fa-github"></i> GitHub Code </a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pointcloud Tree-Species Classification-->
+        <div class="container anchor">
+            <h3 class="font-1 nevada-blue boldest" style="padding-top:1em">Pointcloud Tree-Species Classification</h3>
+            <hr/>
+            <div class="col l3 m6 margin-bottom">
+                <div class="card">
+                    <img src="images/voxel_tree_1_746x746.png" alt="Tree Species Mapping Using Voxel Density Rasters With Convolutional
+                    Autoencoders" style="width:100%">
+                    <div class="container">
+                        <h3 class="center" style="padding:4pt 0pt 4pt 0pt">Voxel Density Rasters With Convolutional Autoencoders</h3>
+                        <p><a class="button light-grey block" style="text-decoration:none;" href="pdfs/autoencoder_classification_paper.pdf"><i class="fa fa-file-pdf-o"></i> Paper </a></p>
+                        <p><a class="button light-grey block" style="text-decoration:none;" href="https://docs.google.com/presentation/d/e/2PACX-1vTEhCmXHtWEqevn7qFMlwlt6OL0C5sMwk2X20b9JeB4kXBqhwi7fXmV0ICTJjolONt7t1p-6WKzgT5l/pub?start=false&loop=false&delayms=3000"><i class="fa fa-file-powerpoint-o"></i> Slides </a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Research Assistant Grant Projects-->
+        <div class="graycontainer light-grey anchor">
+            <div class="container" style="padding:2em 2em">
+                <h3 class="font-1 nevada-blue boldest" style="padding-top:1em">Research Assistant Grant Projects</h3>
+                <hr/>
+                <div class="col l3 m6 margin-bottom">
+                    <div class="card">
+                        <img src="images/fvs_simulated_treemap.png" alt="Forest Vegetation Simulator .out JSON Parser" style="width:100%">
+                        <div class="container">
+                            <h3 class="center" style="padding:4pt 0pt 4pt 0pt">Forest Vegetation Simulator .out JSON Parser</h3>
+                            <p><a class="button light-grey block" style="text-decoration:none;" href="https://github.com/GunnerStone/FVS_Parser"><i class="fa fa-github"></i> GitHub Code </a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- SpeedTree Python Wrappers-->
+        <div class="container anchor">
+            <h3 class="font-1 nevada-blue boldest" style="padding-top:1em">SpeedTree Python Wrappers</h3>
+            <hr/>
+            <div class="col l3 m6 margin-bottom">
+                <div class="card">
+                    <img src="images/SpeedTree.png" alt="SpeedTree .xml pointcloud Node & Generator parsing Python library" style="width:100%">
+                    <div class="container">
+                        <h3 class="center" style="padding:4pt 0pt 4pt 0pt">SpeedTree .xml pointcloud Node & Generator parsing Python library</h3>
+                        <p><a class="button light-grey block" style="text-decoration:none;" href="https://github.com/GunnerStone/pyXMLTree"><i class="fa fa-github"></i> GitHub Code </a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col l3 m6 margin-bottom">
+                <div class="card">
+                    <img src="images/SpeedTree.png" alt="SpeedTree .spm decompiler Python package" style="width:100%">
+                    <div class="container">
+                        <h3 class="center" style="padding:4pt 0pt 4pt 0pt">SpeedTree .spm decompiler Python package</h3>
+                        <p><a class="button light-grey block" style="text-decoration:none;" href="https://github.com/GunnerStone/pySPMTree"><i class="fa fa-github"></i> GitHub Code </a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col l3 m6 margin-bottom">
+                <div class="card">
+                    <img src="images/SpeedTree.png" alt="SpeedTree stochastic .spm generator" style="width:100%">
+                    <div class="container">
+                        <h3 class="center" style="padding:4pt 0pt 4pt 0pt">SpeedTree stochastic .spm generator</h3>
+                        <p><a class="button light-grey block" style="text-decoration:none;" href="https://github.com/GunnerStone/SpeedTree_Stochastic_SPM_Generator"><i class="fa fa-github"></i> GitHub Code </a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- End About Section -->
+
+            
+
+        <!-- Contact Section -->
+        <div class="graycontainer light-grey anchor" id="contact">
+            <div class="container light-grey anchor" style="padding:64px 16px" id="contact">
+                <!-- Begin Contact Section -->
+                <h3 class="font-1 nevada-blue boldest">GET IN CONTACT WITH ME</h3>
+                <hr/>
+                <div class="row-padding" style="margin-top:20px">
+                    <div class="contact-container">
+                            <div class="slot-divv">
+                                <img src="images/University Logo RGB_block_n_blue_746x746.png" alt="UNR LOGO" style="width:100%">
+                                <div class="container">
+                                    <h3>UNR Employee Email</h3>
+                                    <h4>gunnerstone@unr.edu</h4>
+                                    <p><a class="button light-grey block" style="text-decoration:none;" href="mailto:gunnerstone@unr.edu"><i class="fa fa-envelope"></i> Email</a></p>
+                                </div>
+                            </div>
+                        <div class="slot-divv">
+                            <img src="images/stack_overflow.png" alt="UNR LOGO" style="width:100%">
+                            <div class="container">
+                                <h3>Stack Overflow Profile</h3>
+                                <h4>gunner-stone</h4>
+                                <p><a class="button light-grey block" style="text-decoration:none;" href="https://stackoverflow.com/users/5274923/gunner-stone"><i class="fa fa-stack-overflow" aria-hidden="true"></i> Profile</a></p>
+                            </div>
+                        </div>
+                        <div class="slot-divv">
+                            <img src="images/GitHub-Mark.png" alt="UNR LOGO" style="width:100%">
+                            <div class="container">
+                                <h3>Github Profile</h3>
+                                <h4>Gunner Stone</h4>
+                                <p><a class="button light-grey block" style="text-decoration:none;" href="https://github.com/GunnerStone"><i class="fa fa-github" aria-hidden="true"></i> Profile</a></p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <!-- End Contact Section -->
+                <!-- Begin Frameworks Section -->
+                <h3 class="font-1 nevada-blue boldest" style="padding-top:2.5em;">MY DATA-SCIENCE TOOLS</h3>
+                <hr/>
+                <div class="row-padding" style="margin-top:2em">
+                    <div class="contact-container" style="padding-top:5em;">
+                        <div class="image-frame" style="background-image:url(images/python_icon.png)"></div>
+                        <div class="image-frame" style="background-image:url(images/numpy_icon.png)"></div>
+                        <div class="image-frame" style="background-image:url(images/scipy_icon.png)"></div>
+                        <div class="image-frame" style="background-image:url(images/jupyter_icon.png)"></div>
+                    </div> 
+                    <div class="contact-container">
+                        <div class="image-frame" style="background-image:url(images/pytorch_icon.png)"></div>
+                        <div class="image-frame" style="background-image:url(images/tensorflow_icon.png)"></div>
+                        <div class="image-frame" style="background-image:url(images/keras_icon.png)"></div>
+                        <div class="image-frame" style="background-image:url(images/opencv_icon.png)"></div>
+                    </div> 
+                </div>
+                <!-- End Frameworks Section -->
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="graycontainer light-grey">
+        <footer class="center padding-64">
+            <a style="text-decoration:none;" href="#home" class="button light-grey standard-font"><i class="fa fa-arrow-up margin-right"></i>To the top</a>
+        </footer>
+        </div>
+</body>
+<div rel="stylesheet" class="se-pre-con"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>
+	$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+</script>
+<script>
+    // Modal Image Gallery
+    function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+    }
+
+
+    // Toggle between showing and hiding the sidebar when clicking the menu icon
+    var mySidebar = document.getElementById("mySidebar");
+
+    function bar_open() {
+        if (mySidebar.style.display === 'block') {
+            mySidebar.style.display = 'none';
+        } else {
+            mySidebar.style.display = 'block';
+        }
+    }
+
+    // Close the sidebar with the close button
+    function bar_close() {
+        mySidebar.style.display = "none";
+    }
+</script>
+</html>
