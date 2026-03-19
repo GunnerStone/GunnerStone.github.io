@@ -884,14 +884,8 @@ p {
 }
 
 /* --- Education --- */
-.edu-degrees {
-  margin-top: var(--sp-6);
-  display: flex;
-  flex-direction: column;
-  gap: var(--sp-1);
-}
-
 .edu-line {
+  margin-top: var(--sp-6);
   font-size: var(--fs-sm);
   color: var(--clr-text-secondary);
   line-height: var(--lh-normal);
@@ -900,7 +894,6 @@ p {
 .edu-line strong {
   color: var(--clr-text);
   font-weight: var(--fw-semibold);
-  margin-right: var(--sp-2);
 }
 
 /* --- Skip to content (a11y) --- */
