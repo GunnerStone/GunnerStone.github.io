@@ -1,0 +1,74 @@
+/* ============================================
+   Pixel Hero — Retro Pixel Forest Canvas
+   Extracted from proto-pixel
+   ============================================ */
+
+#pixel-hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#pixel-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  image-rendering: pixelated;
+}
+
+#pixel-hero .hero-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  pointer-events: none;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+#pixel-hero .hero-text h1 {
+  font-family: 'Press Start 2P', monospace;
+  font-size: clamp(1.6rem, 4.5vw, 3.2rem);
+  color: var(--text);
+  line-height: 1.4;
+  text-shadow:
+    3px 3px 0 var(--bg),
+    -1px -1px 0 var(--bg),
+     1px -1px 0 var(--bg),
+    -1px  1px 0 var(--bg),
+     0 0 20px rgba(96,165,250,.45);
+  letter-spacing: .04em;
+}
+
+/* Fog loading overlay */
+#pixel-fog {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 5;
+  background: #0f172a;
+  transition: opacity 1.5s ease;
+  pointer-events: none;
+}
+[data-theme="light"] #pixel-fog {
+  background: #fafafa;
+}
+#pixel-fog.hidden { opacity: 0; }
+
+#pixel-hero .hero-text .subtitle {
+  font-family: 'Press Start 2P', monospace;
+  font-size: clamp(.55rem, 1.4vw, .85rem);
+  color: var(--accent);
+  margin-top: 1rem;
+  line-height: 1.8;
+  text-shadow:
+    2px 2px 0 var(--bg),
+    -1px -1px 0 var(--bg),
+     1px -1px 0 var(--bg),
+    -1px  1px 0 var(--bg),
+     0 0 12px rgba(96,165,250,.35);
+}

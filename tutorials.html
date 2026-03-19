@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <script>(function(){var p=new URLSearchParams(location.search).get('theme');var t=p==='dark'||p==='light'?p:localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t)})()</script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Research funding and grants supporting Gunner Stone's work in wildfire science and forest ecology.">
-  <title>Funding — Gunner Stone</title>
+  <meta name="description" content="Tutorials and resources by Gunner Stone — LiDAR, point clouds, Unreal Engine 5, and 3D modeling.">
+  <title>Tutorials — Gunner Stone</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -23,8 +23,8 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="research.html">Research</a></li>
         <li><a href="teaching.html">Teaching</a></li>
-        <li><a href="funding.html" class="active">Funding</a></li>
-        <li><a href="tutorials.html">Tutorials</a></li>
+        <li><a href="funding.html">Funding</a></li>
+        <li><a href="tutorials.html" class="active">Tutorials</a></li>
         <li><a href="personal.html">Personal</a></li>
         <li>
           <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
@@ -42,45 +42,43 @@
   <main id="main">
     <section class="page-header">
       <div class="container">
-        <span class="section-label">Grants &amp; Support</span>
-        <h1>Research Funding</h1>
-        <p>Research grants and funding opportunities that have supported my work in wildfire science, forest ecology, and computational research.</p>
+        <span class="section-label">Learn &amp; Explore</span>
+        <h1>Tutorials &amp; Resources</h1>
+        <p>Concise posts exploring interesting concepts, tutorials, and small projects with practical code examples.</p>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
-        <div class="grid grid-2" style="gap: var(--sp-8);">
+        <div class="grid grid-2">
 
-          <div class="card reveal">
-            <img src="../GunnerStone.github.io/Funding/02c79d2618240f5149f1f3d4fd113031.jpg" alt="EPSCoR HDRFS" class="card-img">
+          <a href="../GunnerStone.github.io/TutorialSpeedTree Models as High-Fidelity.html" class="card reveal" style="text-decoration:none; color:inherit;">
+            <img src="../GunnerStone.github.io/Tutorials  Resources/1ccf74cfadeb35d20e03f2ae993c34dc.jpg" alt="SpeedTree Tutorial" class="card-img">
             <div class="card-body">
               <div class="tags">
-                <span class="tag">NSF</span>
-                <span class="tag">EPSCoR</span>
+                <span class="tag">Tutorial</span>
+                <span class="tag">3D Modeling</span>
+                <span class="tag">Point Clouds</span>
               </div>
-              <h3>EPSCoR Track-1: Harnessing the Data Revolution for Fire Science (HDRFS)</h3>
-              <p>Increasing Nevada's capacity for wildland fire research, education, and workforce development. Addresses Grand Challenges by the National Science and Technology Council for reducing wildland fire-related disasters in the western U.S.</p>
-              <a href="https://hdrfs.epscorspo.nevada.edu/" class="btn btn-sm btn-secondary" target="_blank" rel="noopener">
-                Visit Project →
-              </a>
+              <h3>SpeedTree Models as High-Fidelity Synthetic Point Clouds</h3>
+              <p>Learn how to transform intricate 3D tree models into high-fidelity synthetic point clouds — perfect for machine learning and advanced analysis in environmental simulations.</p>
+              <span class="btn btn-sm btn-secondary mt-4">Read Tutorial →</span>
             </div>
-          </div>
+          </a>
 
-          <div class="card reveal">
-            <img src="../GunnerStone.github.io/Funding/376ee4faa2d490b3cd8837eed9549841.jpg" alt="GigaFire Project" class="card-img">
+          <a href="../GunnerStone.github.io/Documentation UE5 LidarToolkitPlugin.html" class="card reveal" style="text-decoration:none; color:inherit;">
+            <img src="../GunnerStone.github.io/Tutorials  Resources/d26bfc1ec770a719ed9a04a081cc44f2.jpg" alt="LiDAR Toolkit Plugin" class="card-img">
             <div class="card-body">
               <div class="tags">
-                <span class="tag">Wildfire</span>
-                <span class="tag">Remote Sensing</span>
+                <span class="tag">Documentation</span>
+                <span class="tag">UE5</span>
+                <span class="tag">LiDAR</span>
               </div>
-              <h3>The GigaFire Project</h3>
-              <p>Interconnected research projects quantifying the state and dynamics of wildland fuels and the impacts of fuel management on fire severity, carbon sequestration, and water quality. A collaboration between UNR, CAL FIRE, and the California Air Resources Board.</p>
-              <a href="https://www.gearslab.org/the-gigafire-project.html" class="btn btn-sm btn-secondary" target="_blank" rel="noopener">
-                Visit Project →
-              </a>
+              <h3>UE5 LiDAR Toolkit Plugin Documentation</h3>
+              <p>Scan 3D environments, capture point clouds, and export data in .xyz format. Designed for the Quixel Megascans vegetation library but integrates with most of Unreal's collision and material systems.</p>
+              <span class="btn btn-sm btn-secondary mt-4">View Documentation →</span>
             </div>
-          </div>
+          </a>
 
         </div>
       </div>

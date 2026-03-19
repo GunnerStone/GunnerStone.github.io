@@ -1,0 +1,200 @@
+/* ============================================
+   Forest Hero — Low-Poly Canvas
+   Extracted from proto-lowpoly-v2b
+   ============================================ */
+
+#hero {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#canvas {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+}
+
+#overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    pointer-events: none;
+    padding-bottom: 8vh;
+    gap: 0;
+}
+
+/* Soft scrim behind text for legibility */
+#overlay::before {
+    content: '';
+    position: absolute;
+    width: 70vw;
+    height: 30vh;
+    border-radius: 50%;
+    background: radial-gradient(ellipse, rgba(0,0,0,0.35) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: -1;
+}
+[data-theme="light"] #overlay::before {
+    background: radial-gradient(ellipse, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.3) 50%, transparent 75%);
+    width: 80vw;
+    height: 35vh;
+}
+
+#overlay h1, #overlay p {
+    pointer-events: auto;
+    cursor: default;
+}
+
+#overlay h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    text-shadow: 0 2px 20px rgba(0,0,0,0.6), 0 0 60px rgba(0,0,0,0.3);
+    margin: 0 0 0.4rem 0;
+}
+[data-theme="light"] #overlay h1 {
+    color: #0f1a2a;
+    -webkit-text-stroke: 1.5px rgba(255,255,255,0.85);
+    paint-order: stroke fill;
+    text-shadow:
+        0 0 8px rgba(255,255,255,0.9),
+        0 0 20px rgba(255,255,255,0.6),
+        0 1px 3px rgba(0,0,0,0.15);
+}
+
+#overlay p {
+    font-size: clamp(0.85rem, 1.6vw, 1.15rem);
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    line-height: 1.4;
+    margin: 0;
+    text-shadow: 0 1px 12px rgba(0,0,0,0.5);
+}
+[data-theme="light"] #overlay p {
+    color: #1a2b3d;
+    font-weight: 600;
+    -webkit-text-stroke: 0.5px rgba(255,255,255,0.8);
+    paint-order: stroke fill;
+    text-shadow:
+        0 0 6px rgba(255,255,255,0.9),
+        0 0 14px rgba(255,255,255,0.5),
+        0 1px 2px rgba(0,0,0,0.1);
+}
+
+#fog {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 5;
+    background: #0f172a;
+    transition: opacity 1.5s ease;
+    pointer-events: none;
+}
+[data-theme="light"] #fog {
+    background: #fafafa;
+}
+#fog.hidden { opacity: 0; }
+
+#fire-stats {
+    position: absolute;
+    top: 5rem; left: 1.5rem;
+    z-index: 20;
+    font-family: 'Space Grotesk', sans-serif;
+    pointer-events: none;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+#fire-stats.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.stat-row {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    margin-bottom: 0.25rem;
+}
+.stat-icon { font-size: 0.9rem; }
+.stat-val {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #ff8c42;
+    text-shadow: 0 1px 8px rgba(0,0,0,0.6);
+    min-width: 3.5rem;
+}
+.stat-label {
+    font-size: 0.7rem;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.7;
+    text-shadow: 0 1px 6px rgba(0,0,0,0.5);
+}
+#fire-quip {
+    margin-top: 0.6rem;
+    font-size: 0.75rem;
+    font-style: italic;
+    font-weight: 300;
+    max-width: 420px;
+    white-space: nowrap;
+    line-height: 1.4;
+    opacity: 0.8;
+    text-shadow: 0 1px 8px rgba(0,0,0,0.5);
+    color: #ffa366;
+}
+#fire-source {
+    margin-top: 0.3rem;
+    font-size: 0.55rem;
+    font-weight: 300;
+    opacity: 0.45;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+    max-width: 420px;
+}
+
+/* Light-mode fire stats overrides */
+[data-theme="light"] .stat-val {
+    color: #c85000;
+    -webkit-text-stroke: 1px rgba(255,255,255,0.9);
+    paint-order: stroke fill;
+    text-shadow:
+        0 0 6px rgba(255,255,255,0.95),
+        0 0 14px rgba(255,255,255,0.6),
+        0 1px 2px rgba(0,0,0,0.1);
+}
+[data-theme="light"] .stat-label {
+    color: #1a2b3d;
+    opacity: 0.85;
+    -webkit-text-stroke: 0.3px rgba(255,255,255,0.7);
+    paint-order: stroke fill;
+    text-shadow:
+        0 0 5px rgba(255,255,255,0.9),
+        0 0 12px rgba(255,255,255,0.5);
+}
+[data-theme="light"] #fire-quip {
+    color: #b34700;
+    -webkit-text-stroke: 0.5px rgba(255,255,255,0.85);
+    paint-order: stroke fill;
+    text-shadow:
+        0 0 6px rgba(255,255,255,0.9),
+        0 0 14px rgba(255,255,255,0.5);
+}
+[data-theme="light"] #fire-source {
+    color: #3a4a5a;
+    opacity: 0.6;
+    text-shadow:
+        0 0 4px rgba(255,255,255,0.9),
+        0 0 10px rgba(255,255,255,0.5);
+}
+[data-theme="light"] .stat-icon {
+    text-shadow: 0 0 5px rgba(255,255,255,0.9);
+}
