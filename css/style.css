@@ -884,14 +884,20 @@ p {
 }
 
 /* --- Education Timeline --- */
-.education-line {
+.edu-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
   margin-top: var(--sp-6);
+  padding: var(--sp-3) var(--sp-6);
+  background: var(--clr-surface);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--border-radius-full);
   font-size: var(--fs-sm);
   color: var(--clr-text-secondary);
-  letter-spacing: 0.01em;
 }
 
-.education-line strong {
+.edu-pill strong {
   color: var(--clr-text);
   font-weight: var(--fw-semibold);
 }
