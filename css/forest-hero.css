@@ -182,18 +182,24 @@
 }
 [data-theme="light"] #fire-quip {
     color: #b34700;
-    -webkit-text-stroke: 0.5px rgba(255,255,255,0.85);
+    font-weight: 600;
+    -webkit-text-stroke: 1px rgba(255,255,255,0.95);
     paint-order: stroke fill;
     text-shadow:
-        0 0 6px rgba(255,255,255,0.9),
-        0 0 14px rgba(255,255,255,0.5);
+        0 0 8px rgba(255,255,255,1),
+        0 0 16px rgba(255,255,255,0.8),
+        0 0 24px rgba(255,255,255,0.4);
 }
 [data-theme="light"] #fire-source {
-    color: #3a4a5a;
-    opacity: 0.6;
+    color: #2a3a4a;
+    font-weight: 500;
+    opacity: 0.85;
+    -webkit-text-stroke: 0.8px rgba(255,255,255,0.95);
+    paint-order: stroke fill;
     text-shadow:
-        0 0 4px rgba(255,255,255,0.9),
-        0 0 10px rgba(255,255,255,0.5);
+        0 0 8px rgba(255,255,255,1),
+        0 0 16px rgba(255,255,255,0.8),
+        0 0 24px rgba(255,255,255,0.4);
 }
 [data-theme="light"] .stat-icon {
     text-shadow: 0 0 5px rgba(255,255,255,0.9);
