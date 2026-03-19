@@ -24,13 +24,13 @@ Two immersive **canvas-rendered hero animations** anchor the landing and persona
 | Near-Black Ink | `#111827` | Primary headings and high-emphasis text |
 | Slate Gray | `#6b7280` | Body copy and secondary text |
 | Muted Silver | `#9ca3af` | Captions, timestamps, and de-emphasized labels |
-| Cobalt Blue | `#2563eb` | Primary accent — links, buttons, active states, and interactive cues |
-| Deep Cobalt | `#1d4ed8` | Accent hover state — darkened for clear affordance |
-| Frost Blue | `#dbeafe` | Accent tint — tag backgrounds, active nav highlighting, icon containers |
+| Deep Teal | `#0d9488` | Primary accent — links, buttons, active states. Bridges nature (green) and technology (blue), reflecting the forest ecology × ML identity |
+| Forest Teal | `#0f766e` | Accent hover state — darkened for clear affordance |
+| Mint Frost | `#ccfbf1` | Accent tint — tag backgrounds, active nav highlighting, icon containers |
 | Cool Border | `#e5e7eb` | Subtle dividers and card outlines |
 | Emerald Success | `#059669` | Success states and positive indicators |
-| Ice Blue Tag Background | `#eff6ff` | Tag pill background |
-| Navy Tag Text | `#1e40af` | Tag pill text for contrast against light pill |
+| Teal Mist Tag Background | `#f0fdfa` | Tag pill background |
+| Deep Pine Tag Text | `#115e59` | Tag pill text for contrast against light pill |
 
 #### Dark Mode
 
@@ -42,12 +42,12 @@ Two immersive **canvas-rendered hero animations** anchor the landing and persona
 | Snow White | `#f1f5f9` | Primary headings and high-emphasis text |
 | Cool Pewter | `#94a3b8` | Body copy and secondary text |
 | Dim Slate | `#64748b` | De-emphasized text and muted labels |
-| Sky Blue | `#60a5fa` | Primary accent — links, interactive cues, and data highlights |
-| Pale Sky | `#93bbfd` | Accent hover — lightened against dark background |
-| Ocean Depth | `#1e3a5f` | Accent tint — tag backgrounds, active nav, icon containers |
+| Luminous Teal | `#2dd4bf` | Primary accent — links, interactive cues, and data highlights. Glows vividly against the dark navy canvas |
+| Pale Aqua | `#5eead4` | Accent hover — lightened against dark background |
+| Abyssal Teal | `#134e4a` | Accent tint — tag backgrounds, active nav, icon containers |
 | Steel Border | `#334155` | Subtle dividers and card outlines |
-| Twilight Tag Background | `#1e3a5f` | Tag pill background |
-| Powder Blue Tag Text | `#93c5fd` | Tag pill text for readability |
+| Abyssal Teal Tag Background | `#134e4a` | Tag pill background |
+| Luminous Teal Tag Text | `#5eead4` | Tag pill text for readability |
 
 ### Hero Canvas Palettes
 
