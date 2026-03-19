@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <script>(function(){var p=new URLSearchParams(location.search).get('theme');var t=p==='dark'||p==='light'?p:localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t)})()</script>
+  <script>(function(){var t=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t)})()</script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Gunner Stone — Applied Scientist and Machine Learning Engineer specializing in LiDAR point cloud classification, deep learning, and forest ecology.">
   <title>Gunner Stone — Applied Scientist</title>

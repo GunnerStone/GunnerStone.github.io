@@ -12,20 +12,9 @@
   const iconMoon = themeToggle?.querySelector('.icon-moon');
 
   function getPreferredTheme() {
-    const urlTheme = new URLSearchParams(window.location.search).get('theme');
-    if (urlTheme === 'dark' || urlTheme === 'light') return urlTheme;
     const stored = localStorage.getItem('theme');
     if (stored) return stored;
     return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-  }
-
-  function stampThemeOnLinks(theme) {
-    document.querySelectorAll('a[href]').forEach(a => {
-      const href = a.getAttribute('href');
-      if (!href || href.startsWith('#') || href.startsWith('http') || href.startsWith('mailto')) return;
-      const base = href.split('?')[0];
-      a.setAttribute('href', base + '?theme=' + theme);
-    });
   }
 
   function applyTheme(theme) {
@@ -36,7 +25,6 @@
       iconSun.style.display = theme === 'dark' ? 'none' : 'block';
       iconMoon.style.display = theme === 'dark' ? 'block' : 'none';
     }
-    stampThemeOnLinks(theme);
   }
 
   applyTheme(getPreferredTheme());

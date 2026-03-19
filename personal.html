@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <script>(function(){var p=new URLSearchParams(location.search).get('theme');var t=p==='dark'||p==='light'?p:localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');var bg=t==='light'?'#fafafa':'#0f172a';document.documentElement.setAttribute('data-theme',t);document.documentElement.style.background=bg;var s=document.createElement('style');s.textContent='body{background:'+bg+'}#pixel-hero{position:relative;width:100%;height:100vh;overflow:hidden;background:'+bg+'}#pixel-fog{background:'+bg+'}#pixel-canvas{position:absolute;inset:0;width:100%;height:100%}';document.head.appendChild(s)})()</script>
+  <script>(function(){var t=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');var bg=t==='light'?'#fafafa':'#0f172a';document.documentElement.setAttribute('data-theme',t);document.documentElement.style.background=bg;var s=document.createElement('style');s.textContent='body{background:'+bg+'}#pixel-hero{position:relative;width:100%;height:100vh;overflow:hidden;background:'+bg+'}#pixel-fog{background:'+bg+'}#pixel-canvas{position:absolute;inset:0;width:100%;height:100%}';document.head.appendChild(s)})()</script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="A little more about Gunner Stone — interests, hobbies, and things outside of work.">
   <title>Personal — Gunner Stone</title>
