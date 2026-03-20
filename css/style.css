@@ -648,6 +648,11 @@ p {
   gap: var(--sp-3);
 }
 
+.btn-bibtex {
+  font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+  letter-spacing: 0.02em;
+}
+
 @media (max-width: 48rem) {
   .pub-card {
     grid-template-columns: 1fr;
