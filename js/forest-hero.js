@@ -690,11 +690,11 @@
     function updateFireStats() {
         // Typical mature Pinus ponderosa (~70cm DBH): ~1.5 tonnes C = ~5.5 tonnes CO₂
         // Source: USDA Forest Service GTR NRS-202
-        var co2 = (burnedCount * 5.5).toFixed(1);
+        var co2 = Math.ceil(burnedCount * 5.5);
         // Average ponderosa pine takes ~60-80 years to reach maturity
         var years = burnedCount * 70;
         document.getElementById('stat-trees').textContent = burnedCount.toLocaleString();
-        document.getElementById('stat-co2').textContent = Number(co2).toLocaleString();
+        document.getElementById('stat-co2').textContent = co2.toLocaleString();
         document.getElementById('stat-years').textContent = years.toLocaleString();
         document.getElementById('fire-source').textContent =
             'Est. based on mature Pinus ponderosa (~70cm DBH, ~1.5t C/tree). USDA FS GTR NRS-202';
