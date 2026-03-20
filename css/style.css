@@ -651,6 +651,32 @@ p {
 .btn-bibtex {
   font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
   letter-spacing: 0.02em;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-bibtex .btn-bibtex-label {
+  transition: opacity 0.25s ease;
+}
+
+.btn-bibtex.copied .btn-bibtex-label {
+  opacity: 0;
+}
+
+.btn-bibtex .btn-bibtex-check {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  color: var(--clr-accent);
+  font-weight: var(--fw-semibold);
+}
+
+.btn-bibtex.copied .btn-bibtex-check {
+  opacity: 1;
 }
 
 @media (max-width: 48rem) {
